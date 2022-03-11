@@ -1,6 +1,6 @@
 {
   "dependencies": {
+    "@actions/core": "^1.6.0",
     "js-hcl-parser": "^1.0.1"
   }
 }
-
