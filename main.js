@@ -15,7 +15,7 @@ let hcl_string = hcl.parse(hcl_data)
 
 
 if (hcl_string.includes("unable to parse JSON")) {
-    throw new Error(hcl_string)
+    throw new Error(`FILE: ${file_path} | ${hcl_string}`)
 }
 else {
     console.log(`SUCESS: ${file_path} is valid hcl file.`)
