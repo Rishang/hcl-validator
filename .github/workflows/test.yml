@@ -4,7 +4,7 @@ on:
 defaults:
   run:
     shell: bash
-    working-directory: ./test
+    # working-directory: ./test
 
 jobs:
   tf:
@@ -19,4 +19,4 @@ jobs:
     - name: test script
       env:
         HCL_FILE_PATH: test/vars/test.tfvars
-      run: node ../main.js
+      run: node main.js
