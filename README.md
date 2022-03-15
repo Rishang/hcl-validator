@@ -1,9 +1,12 @@
 # hcl syntax validator for github actions
 
 ### Required arguments
+
 **Usage**
 
  - **HCL_FILE_PATH**: provide list of folder of file paths seprated by "," to check syntac of.
+
+> **Supported file formats**: `.hcl`, `.tfvars`
 
 ### Example actions
 
