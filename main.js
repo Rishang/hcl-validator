@@ -47,6 +47,7 @@ function check_hcl(file_path) {
 // console.log(file_paths)
 
 for (let path of file_paths) {
+    console.log(path)
 
     if (fs.statSync(path).isDirectory()) {
         _sub_fs = fs.readdirSync(path)
