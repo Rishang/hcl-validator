@@ -5,7 +5,7 @@ inputs:
     description: 'File path for hcl which has to be validated.'
     required: true
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'main.js'
 branding:
   icon: 'lock'
