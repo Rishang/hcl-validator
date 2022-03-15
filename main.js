@@ -9,7 +9,7 @@ let file_paths = actions.getInput('HCL_FILE_PATH') ||  process.env.HCL_FILE_PATH
 file_paths = file_paths.replace(' ','').split(',')
 
 function check_ext(file_path) {
-    let valid = ["hcl","tf","tfvars"]
+    let valid = ["hcl","tfvars"]
   
     let f_ext = file_path.split('/').at(-1).split('.').at(-1)
   
