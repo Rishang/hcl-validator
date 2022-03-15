@@ -1,0 +1,22 @@
+on:
+  push:
+
+defaults:
+  run:
+    shell: bash
+    working-directory: ./test
+
+jobs:
+  tf:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Git clone the repository
+      uses: actions/checkout@v2
+
+    - name: check path
+      run: pwd
+    
+    - name: test script
+      env:
+        HCL_FILE_PATH: test/vars/test.tfvars
+      run: node ../main.js
